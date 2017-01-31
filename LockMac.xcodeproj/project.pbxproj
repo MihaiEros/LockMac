@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ACF5FB71107ECA3794DBE8D /* Pods_LockMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AB54AC5B6CF2542972B486 /* Pods_LockMac.framework */; };
+		BF2CD8471E40734800188731 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2CD8451E40734800188731 /* Interface.storyboard */; };
+		BF2CD8491E40734800188731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2CD8481E40734800188731 /* Assets.xcassets */; };
+		BF2CD8501E40734800188731 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BF2CD84F1E40734800188731 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF2CD8551E40734800188731 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CD8541E40734800188731 /* InterfaceController.swift */; };
+		BF2CD8571E40734800188731 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CD8561E40734800188731 /* ExtensionDelegate.swift */; };
+		BF2CD8591E40734800188731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2CD8581E40734800188731 /* Assets.xcassets */; };
+		BF2CD85D1E40734800188731 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BF2CD8431E40734800188731 /* Watch.app */; };
+		BFDA1D491E3FAA3B007F7851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA1D481E3FAA3B007F7851 /* AppDelegate.swift */; };
+		BFDA1D4B1E3FAA3B007F7851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA1D4A1E3FAA3B007F7851 /* ViewController.swift */; };
+		BFDA1D4E1E3FAA3B007F7851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDA1D4C1E3FAA3B007F7851 /* Main.storyboard */; };
+		BFDA1D501E3FAA3B007F7851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDA1D4F1E3FAA3B007F7851 /* Assets.xcassets */; };
+		BFDA1D531E3FAA3B007F7851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDA1D511E3FAA3B007F7851 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF2CD8511E40734800188731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDA1D3D1E3FAA3B007F7851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2CD84E1E40734800188731;
+			remoteInfo = "Watch Extension";
+		};
+		BF2CD85B1E40734800188731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDA1D3D1E3FAA3B007F7851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2CD8421E40734800188731;
+			remoteInfo = Watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF2CD8631E40734800188731 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF2CD8501E40734800188731 /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2CD8651E40734800188731 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BF2CD85D1E40734800188731 /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		112488973B8BC357EE0CA7EC /* Pods-LockMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-LockMac/Pods-LockMac.release.xcconfig"; sourceTree = "<group>"; };
+		90BB2458AC3E24E698862A48 /* Pods-LockMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LockMac/Pods-LockMac.debug.xcconfig"; sourceTree = "<group>"; };
+		A2AB54AC5B6CF2542972B486 /* Pods_LockMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LockMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2CD8431E40734800188731 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2CD8461E40734800188731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BF2CD8481E40734800188731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF2CD84A1E40734800188731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2CD84F1E40734800188731 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2CD8541E40734800188731 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BF2CD8561E40734800188731 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BF2CD8581E40734800188731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF2CD85A1E40734800188731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFDA1D451E3FAA3B007F7851 /* LockMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDA1D481E3FAA3B007F7851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFDA1D4A1E3FAA3B007F7851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFDA1D4D1E3FAA3B007F7851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFDA1D4F1E3FAA3B007F7851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFDA1D521E3FAA3B007F7851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFDA1D541E3FAA3B007F7851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF2CD84C1E40734800188731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDA1D421E3FAA3B007F7851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACF5FB71107ECA3794DBE8D /* Pods_LockMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B92AD1AC35168EFEE20E137 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90BB2458AC3E24E698862A48 /* Pods-LockMac.debug.xcconfig */,
+				112488973B8BC357EE0CA7EC /* Pods-LockMac.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6F5166161D19DE2F9792C25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2AB54AC5B6CF2542972B486 /* Pods_LockMac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF2CD8441E40734800188731 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				BF2CD8451E40734800188731 /* Interface.storyboard */,
+				BF2CD8481E40734800188731 /* Assets.xcassets */,
+				BF2CD84A1E40734800188731 /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		BF2CD8531E40734800188731 /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF2CD8541E40734800188731 /* InterfaceController.swift */,
+				BF2CD8561E40734800188731 /* ExtensionDelegate.swift */,
+				BF2CD8581E40734800188731 /* Assets.xcassets */,
+				BF2CD85A1E40734800188731 /* Info.plist */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		BFDA1D3C1E3FAA3B007F7851 = {
+			isa = PBXGroup;
+			children = (
+				BFDA1D471E3FAA3B007F7851 /* LockMac */,
+				BF2CD8441E40734800188731 /* Watch */,
+				BF2CD8531E40734800188731 /* Watch Extension */,
+				BFDA1D461E3FAA3B007F7851 /* Products */,
+				9B92AD1AC35168EFEE20E137 /* Pods */,
+				B6F5166161D19DE2F9792C25 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFDA1D461E3FAA3B007F7851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFDA1D451E3FAA3B007F7851 /* LockMac.app */,
+				BF2CD8431E40734800188731 /* Watch.app */,
+				BF2CD84F1E40734800188731 /* Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFDA1D471E3FAA3B007F7851 /* LockMac */ = {
+			isa = PBXGroup;
+			children = (
+				BFDA1D481E3FAA3B007F7851 /* AppDelegate.swift */,
+				BFDA1D4A1E3FAA3B007F7851 /* ViewController.swift */,
+				BFDA1D4C1E3FAA3B007F7851 /* Main.storyboard */,
+				BFDA1D4F1E3FAA3B007F7851 /* Assets.xcassets */,
+				BFDA1D511E3FAA3B007F7851 /* LaunchScreen.storyboard */,
+				BFDA1D541E3FAA3B007F7851 /* Info.plist */,
+			);
+			path = LockMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF2CD8421E40734800188731 /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2CD8641E40734800188731 /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				BF2CD8411E40734800188731 /* Resources */,
+				BF2CD8631E40734800188731 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF2CD8521E40734800188731 /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = BF2CD8431E40734800188731 /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BF2CD84E1E40734800188731 /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2CD8621E40734800188731 /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				BF2CD84B1E40734800188731 /* Sources */,
+				BF2CD84C1E40734800188731 /* Frameworks */,
+				BF2CD84D1E40734800188731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = BF2CD84F1E40734800188731 /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		BFDA1D441E3FAA3B007F7851 /* LockMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFDA1D571E3FAA3B007F7851 /* Build configuration list for PBXNativeTarget "LockMac" */;
+			buildPhases = (
+				8ECD7ACAC6F81E22DEC81CC0 /* [CP] Check Pods Manifest.lock */,
+				BFDA1D411E3FAA3B007F7851 /* Sources */,
+				BFDA1D421E3FAA3B007F7851 /* Frameworks */,
+				BFDA1D431E3FAA3B007F7851 /* Resources */,
+				E1C9A7879C7F2BD9F42E61EE /* [CP] Embed Pods Frameworks */,
+				F281422C02AD4E021B2F9C34 /* [CP] Copy Pods Resources */,
+				BF2CD8651E40734800188731 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF2CD85C1E40734800188731 /* PBXTargetDependency */,
+			);
+			name = LockMac;
+			productName = LockMac;
+			productReference = BFDA1D451E3FAA3B007F7851 /* LockMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDA1D3D1E3FAA3B007F7851 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Mihai Erős";
+				TargetAttributes = {
+					BF2CD8421E40734800188731 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N9S744LFC4;
+						ProvisioningStyle = Automatic;
+					};
+					BF2CD84E1E40734800188731 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N9S744LFC4;
+						ProvisioningStyle = Automatic;
+					};
+					BFDA1D441E3FAA3B007F7851 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N9S744LFC4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BFDA1D401E3FAA3B007F7851 /* Build configuration list for PBXProject "LockMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFDA1D3C1E3FAA3B007F7851;
+			productRefGroup = BFDA1D461E3FAA3B007F7851 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFDA1D441E3FAA3B007F7851 /* LockMac */,
+				BF2CD8421E40734800188731 /* Watch */,
+				BF2CD84E1E40734800188731 /* Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF2CD8411E40734800188731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2CD8491E40734800188731 /* Assets.xcassets in Resources */,
+				BF2CD8471E40734800188731 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2CD84D1E40734800188731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2CD8591E40734800188731 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDA1D431E3FAA3B007F7851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDA1D531E3FAA3B007F7851 /* LaunchScreen.storyboard in Resources */,
+				BFDA1D501E3FAA3B007F7851 /* Assets.xcassets in Resources */,
+				BFDA1D4E1E3FAA3B007F7851 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8ECD7ACAC6F81E22DEC81CC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C9A7879C7F2BD9F42E61EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LockMac/Pods-LockMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F281422C02AD4E021B2F9C34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LockMac/Pods-LockMac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF2CD84B1E40734800188731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2CD8571E40734800188731 /* ExtensionDelegate.swift in Sources */,
+				BF2CD8551E40734800188731 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFDA1D411E3FAA3B007F7851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDA1D4B1E3FAA3B007F7851 /* ViewController.swift in Sources */,
+				BFDA1D491E3FAA3B007F7851 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF2CD8521E40734800188731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2CD84E1E40734800188731 /* Watch Extension */;
+			targetProxy = BF2CD8511E40734800188731 /* PBXContainerItemProxy */;
+		};
+		BF2CD85C1E40734800188731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2CD8421E40734800188731 /* Watch */;
+			targetProxy = BF2CD85B1E40734800188731 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF2CD8451E40734800188731 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF2CD8461E40734800188731 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		BFDA1D4C1E3FAA3B007F7851 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFDA1D4D1E3FAA3B007F7851 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFDA1D511E3FAA3B007F7851 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFDA1D521E3FAA3B007F7851 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF2CD85E1E40734800188731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N9S744LFC4;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaieros.LockMac.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		BF2CD85F1E40734800188731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N9S744LFC4;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaieros.LockMac.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		BF2CD8601E40734800188731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = N9S744LFC4;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaieros.LockMac.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		BF2CD8611E40734800188731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = N9S744LFC4;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaieros.LockMac.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		BFDA1D551E3FAA3B007F7851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFDA1D561E3FAA3B007F7851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFDA1D581E3FAA3B007F7851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90BB2458AC3E24E698862A48 /* Pods-LockMac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N9S744LFC4;
+				INFOPLIST_FILE = LockMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaieros.LockMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BFDA1D591E3FAA3B007F7851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 112488973B8BC357EE0CA7EC /* Pods-LockMac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N9S744LFC4;
+				INFOPLIST_FILE = LockMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaieros.LockMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF2CD8621E40734800188731 /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2CD8601E40734800188731 /* Debug */,
+				BF2CD8611E40734800188731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF2CD8641E40734800188731 /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2CD85E1E40734800188731 /* Debug */,
+				BF2CD85F1E40734800188731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFDA1D401E3FAA3B007F7851 /* Build configuration list for PBXProject "LockMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFDA1D551E3FAA3B007F7851 /* Debug */,
+				BFDA1D561E3FAA3B007F7851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFDA1D571E3FAA3B007F7851 /* Build configuration list for PBXNativeTarget "LockMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFDA1D581E3FAA3B007F7851 /* Debug */,
+				BFDA1D591E3FAA3B007F7851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDA1D3D1E3FAA3B007F7851 /* Project object */;
+}
