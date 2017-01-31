@@ -12,10 +12,10 @@ import NMSSH
 class ViewController: UIViewController {
     
     // Constants
-    //    <#ERROR#>// FILL IN WITH YOUR OWN VALUES HERE
-    let kUsername = "mihaieros"
-    let kPassword = "test1234"
-    let kHost = "10.0.1.6"
+    <#ERROR#>// FILL IN WITH YOUR OWN VALUES HERE
+    let kUsername = "USERNAME"
+    let kPassword = "PASSWORD"
+    let kHost = "HOST"
     
     // Properties
     var isAccessGranted: Bool = false
