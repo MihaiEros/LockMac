@@ -31,11 +31,13 @@ class InterfaceController: WKInterfaceController {
     // MARK: - IBActions
 
     @IBAction func didTapLockButton() {
+        WKInterfaceDevice.current().play(.click)
         let extensionDelegate = WKExtension.shared().delegate as! ExtensionDelegate
         extensionDelegate.signout()
     }
     
     @IBAction func didTapUnlockButton() {
+        WKInterfaceDevice.current().play(.click)
         let extensionDelegate = WKExtension.shared().delegate as! ExtensionDelegate
         extensionDelegate.login()
     }
