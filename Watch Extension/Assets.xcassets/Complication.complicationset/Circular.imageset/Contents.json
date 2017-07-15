@@ -2,14 +2,12 @@
   "images" : [
     {
       "idiom" : "watch",
-      "filename" : "lockmac-icon-32p.png",
-      "screen-width" : "<=145",
+      "screenWidth" : "{130,145}",
       "scale" : "2x"
     },
     {
       "idiom" : "watch",
-      "filename" : "lockmac-icon-36p.png",
-      "screen-width" : ">145",
+      "screenWidth" : "{146,165}",
       "scale" : "2x"
     }
   ],

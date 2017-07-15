@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		4ACF5FB71107ECA3794DBE8D /* Pods_LockMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AB54AC5B6CF2542972B486 /* Pods_LockMac.framework */; };
 		BF2CD8471E40734800188731 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2CD8451E40734800188731 /* Interface.storyboard */; };
+		BF2CD8491E40734800188731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2CD8481E40734800188731 /* Assets.xcassets */; };
 		BF2CD8501E40734800188731 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BF2CD84F1E40734800188731 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BF2CD8551E40734800188731 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CD8541E40734800188731 /* InterfaceController.swift */; };
 		BF2CD8571E40734800188731 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CD8561E40734800188731 /* ExtensionDelegate.swift */; };
 		BF2CD8591E40734800188731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2CD8581E40734800188731 /* Assets.xcassets */; };
 		BF2CD85D1E40734800188731 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BF2CD8431E40734800188731 /* Watch.app */; };
-		BF8675191F1A254900EC9D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8675181F1A254900EC9D18 /* Assets.xcassets */; };
 		BFDA1D491E3FAA3B007F7851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA1D481E3FAA3B007F7851 /* AppDelegate.swift */; };
 		BFDA1D4B1E3FAA3B007F7851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA1D4A1E3FAA3B007F7851 /* ViewController.swift */; };
 		BFDA1D4E1E3FAA3B007F7851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDA1D4C1E3FAA3B007F7851 /* Main.storyboard */; };
@@ -70,13 +70,13 @@
 		A2AB54AC5B6CF2542972B486 /* Pods_LockMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LockMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2CD8431E40734800188731 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2CD8461E40734800188731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BF2CD8481E40734800188731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2CD84A1E40734800188731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2CD84F1E40734800188731 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2CD8541E40734800188731 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		BF2CD8561E40734800188731 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		BF2CD8581E40734800188731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2CD85A1E40734800188731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF8675181F1A254900EC9D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFDA1D451E3FAA3B007F7851 /* LockMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDA1D481E3FAA3B007F7851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFDA1D4A1E3FAA3B007F7851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				BF2CD8451E40734800188731 /* Interface.storyboard */,
+				BF2CD8481E40734800188731 /* Assets.xcassets */,
 				BF2CD84A1E40734800188731 /* Info.plist */,
-				BF8675181F1A254900EC9D18 /* Assets.xcassets */,
 			);
 			path = Watch;
 			sourceTree = "<group>";
@@ -261,11 +261,6 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = N9S744LFC4;
 						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
 					};
 				};
 			};
@@ -294,7 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF8675191F1A254900EC9D18 /* Assets.xcassets in Resources */,
+				BF2CD8491E40734800188731 /* Assets.xcassets in Resources */,
 				BF2CD8471E40734800188731 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,7 +623,6 @@
 				BF2CD8611E40734800188731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		BF2CD8641E40734800188731 /* Build configuration list for PBXNativeTarget "Watch" */ = {
 			isa = XCConfigurationList;
@@ -637,7 +631,6 @@
 				BF2CD85F1E40734800188731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		BFDA1D401E3FAA3B007F7851 /* Build configuration list for PBXProject "LockMac" */ = {
 			isa = XCConfigurationList;

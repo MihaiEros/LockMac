@@ -12,10 +12,10 @@ import NMSSH
 class ViewController: UIViewController {
     
     // Constants
-//    <#ERROR#>// FILL IN WITH YOUR OWN VALUES HERE
-    let kUsername = "mihaieros"
-    let kPassword = "test1234"
-    let kHost = "192.168.0.227"
+    <#ERROR#>// FILL IN WITH YOUR OWN VALUES HERE
+    let kUsername = "USERNAME"
+    let kPassword = "PASSWORD"
+    let kHost = "HOST"
     
     // Properties
     var isAccessGranted: Bool = false
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
         // wake up your Mac's screen
         wakeScreen()
         
-//        <#ERROR#>// IF YOU HAVE A DIFFERENT PASSWORD, YOU NEED TO BUILD A BIGGER ARRAY HERE
+        <#ERROR#>// IF YOU HAVE A DIFFERENT PASSWORD, YOU NEED TO BUILD A BIGGER ARRAY HERE
         
         // Virtual Keyboard ANSI Standard US keyboard
         // for letters t, e, s, t, 1, 2, 3, 4 - ordered exactly as are written here
